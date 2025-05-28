@@ -30,6 +30,8 @@ Le projet suit une approche modulaire avec des étapes d'extraction, transformat
 ├── view.py                    # Visualisation des résultats + dashboard
 ├── main.py                    # Lancement principal + Streamlit intégré
 ├── run_streamlit.py           # Point d'entrée rapide via streamlit
+├── README.md                  # Présentation du projet, objectifs, installation et usage
+├── requirements.txt           # Liste des dépendances Python du projet
 └── input/ / output/           # Données brutes / résultats
 ```
 
