@@ -1,6 +1,10 @@
 
 # 📊 Analyse de l'impact du taux €STR sur la performance des entreprises du CAC 40
 
+[![GitHub](https://img.shields.io/badge/GitHub-Projet-blue?logo=github)](https://github.com/MohamedDouzi-hub/projet-etl-finance)
+
+🔗 **Lien vers le dépôt GitHub** : [https://github.com/MohamedDouzi-hub/projet-etl-finance](https://github.com/MohamedDouzi-hub/projet-etl-finance)
+
 Projet réalisé dans le cadre du cours **Applied Data Science in Finance**  
 **Master 1 MBFA – Université Paris 1 Panthéon-Sorbonne**  
 Année universitaire : 2024-2025  
