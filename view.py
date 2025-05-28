@@ -2,6 +2,7 @@ import os
 import matplotlib.pyplot as plt
 import pandas as pd
 import seaborn as sns
+import streamlit as st
 
 from helpers_export import dataframes_to_excel
 
@@ -118,10 +119,6 @@ class View:
         Affiche une interface Streamlit avec filtres, graphiques et heatmap
         pour explorer les données par secteur et période.
         """
-        import streamlit as st
-        import seaborn as sns
-        import matplotlib.pyplot as plt
-
         df = self.model.results.copy()
         df["Date"] = pd.to_datetime(df["Date"])
 

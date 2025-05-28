@@ -70,7 +70,7 @@ class Model:
 
         r_squared = pd.DataFrame({
             "Coefficient": [model.rsquared],
-            "P-value": [np.nan],  # 👈 CORRECTION ici
+            "P-value": [np.nan],
             "T-stat": [np.nan]
         }, index=["R-squared"])
 
@@ -115,7 +115,7 @@ class Model:
                     .sort_values(by="Return")
                 )
             elif not index:
-                print(f"⚠️ Pivot sheet '{sh}' ignoré car aucun index spécifié.")
+                print(f"Pivot sheet '{sh}' ignoré car aucun index spécifié.")
                 continue
             elif columns:
                 self.sheets_pivots[sh] = pd.pivot_table(

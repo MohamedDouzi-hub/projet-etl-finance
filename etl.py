@@ -84,7 +84,7 @@ class Etl:
 
         if self.config["etl_main_parameters"]["to_excel"]:
             dataframes_to_excel(export, self.excel_path)
-            print(f"✅ Export Excel : {self.excel_path}")
+            print(f"Export Excel : {self.excel_path}")
 
         if self.config["etl_main_parameters"]["to_sqlite"]:
             dataframes_to_db(

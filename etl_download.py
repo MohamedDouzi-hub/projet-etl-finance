@@ -39,7 +39,7 @@ estr_raw_path = "input/estr.csv"
 estr_clean_path = "input/estr_clean.csv"
 
 if os.path.exists(estr_raw_path):
-    print("🧼 Nettoyage des données macro (estr)...")
+    print("Nettoyage des données macro (estr)...")
 
     df = pd.read_csv(estr_raw_path, skiprows=1, header=None)
     df = df.iloc[:, [0, 2]]  # Garder la Date et la Valeur
