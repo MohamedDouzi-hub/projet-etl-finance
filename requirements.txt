@@ -1,0 +1,12 @@
+pandas
+numpy
+yfinance
+streamlit
+sqlalchemy
+matplotlib
+seaborn
+openpyxl
+pyyaml
+tomli
+toml
+requests

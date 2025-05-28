@@ -1,0 +1,58 @@
+run_mode:
+  run_etl: true
+  run_program: true
+
+file_parameters:
+  input_dir: input
+  output_dir: output
+  version: '01'
+  output_file_excel: output_v{}.xlsx
+  output_file_sqlite: output_v{}.db
+  output_file_excel_final: output_final_v{}.xlsx
+
+etl_main_parameters:
+  to_excel: true
+  to_sqlite: true
+  drop_all_tables: true
+
+files:
+  stock_source_file: stock_data.csv
+  stock_sheet_name: stock
+  macro_source_file: estr_clean.csv
+  macro_sheet_name: macro
+  static_companies_file: companies.csv
+  static_companies_sheet_name: companies
+  final_sheet: summary_statistics
+  report_file: report.xlsx
+
+mandatory_columns:
+  stock:
+    - Date
+    - Ticker
+    - Adj Close
+    - Volume
+  macro:
+    - Date
+    - Indicator
+    - Value
+
+pivots:
+  sheet_names: ["mean_by_sector", "regression"]
+  view_index: ["Sector", null]
+  view_values: [["Return", "Volatility"], null]
+  view_columns: [null, null]
+  view_aggfunc: ["mean", null]
+
+data_types:
+  stock:
+    Date: datetime64[ns]
+    Ticker: str
+    Adj Close: float
+    Volume: int
+  macro:
+    Date: datetime64[ns]
+    Indicator: str
+    Value: float
+
+start_date: "2020-10-01"
+end_date: "2025-05-27"
